@@ -2,13 +2,9 @@ local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/VanTh
  
 local PhantomForcesWindow = Library:NewWindow("Văn Thành IOS")
  
-local KillingCheats = PhantomForcesWindow:NewSection("Main Antilag")
- 
-KillingCheats:CreateButton("Antilag", function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/MakeMenu/refs/heads/main/mainv1.lua.txt"))()
-end)
- 
-KillingCheats:CreateButton("Antilag", function()
+local KillingCheats = PhantomForcesWindow:NewSection("Main Fix Lag")
+
+KillingCheats:CreateButton("Antilag Fix", function()
   local ToDisable = {
 	Textures = true,
 	VisualEffects = true,
@@ -81,20 +77,6 @@ if ToEnable.FullBright then
 end
 end)
 
-local KillingCheats = PhantomForcesWindow:NewSection("Main Unlock FPS")
- 
-KillingCheats:CreateButton("Unlock Fps", function()
-  while true do
-    local args = {
-        [1] = 1000
-    }
-    game:GetService("ReplicatedStorage").UpdateFPS:FireServer(unpack(args))
-    wait(0.01)
-end
-end)
+local KillingCheats = PhantomForcesWindow:NewSection("Main Auto Fruits")
 
-local KillingCheats = PhantomForcesWindow:NewSection("Main Speed")
-
-KillingCheats:CreateTextbox("Speed", function(value)
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
-end)
+KillingCheats:CreateButton("Nhặt Fruit TĐ", function()
