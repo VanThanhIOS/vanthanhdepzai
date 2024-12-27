@@ -77,7 +77,7 @@ if ToEnable.FullBright then
 end
 end)
 
-local KillingCheats = PhantomForcesWindow:NewSection("Main Auto Fruits")
+local KillingCheats = PhantomForcesWindow:NewSection("Main Fruit")
 
 KillingCheats:CreateButton("Nhặt Fruit TĐ", function()
 loadstring(Game:HttpGet("https://raw.githubusercontent.com/VanThanhIOS/vanthanhdepzai/refs/heads/main/autofruit.lua.txt"))()
